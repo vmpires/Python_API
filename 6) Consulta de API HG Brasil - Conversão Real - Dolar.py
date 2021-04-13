@@ -2,7 +2,9 @@ import json
 import requests
 
 def CotarDolar(valor_real):
-    request = requests.get('https://api.hgbrasil.com/finance?format=json-cors&key=cdfa218e')
+    f = open ('config.json', 'r')
+    key = json.load(f)
+    request = requests.get(f"https://api.hgbrasil.com/finance?format=json-cors&key={(key['key'])}")
     cotacao = dict(request.json())
     conversao = valor_real / float(cotacao['results']['currencies']['USD']['buy'])
     return conversao
