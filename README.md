@@ -12,3 +12,5 @@ Programas em Python consumindo API's para gerar dados.
 5) Consulta de arquivo de texto com números de pokemon e retorna um CSV com nome e tipo do pokemon.
 
 6) Consulta da API HG Brasil - Conversão de Real para Dólar.
+
+7) Consulta da API HG Brasil - Imprime valor do Dolar, Euro e Bitcoin 10x em 10 minutos.
