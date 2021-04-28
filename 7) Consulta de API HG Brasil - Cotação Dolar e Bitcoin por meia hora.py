@@ -25,16 +25,16 @@ def CotarBitcoin():
     cotacao = dict(request.json())
     return float(cotacao['results']['currencies']['BTC']['buy'])
 
-def foo():
+def impressao():
     print(time.ctime())
     print(f'Dólar comercial: R$ {CotarDolar():.2f}')
     print(f'Euro comercial: R$ {CotarEuro():.2f}')
     print(f'Bitcoin: R$ {CotarBitcoin():.2f}\n')
-    thread1 = threading.Timer(WAIT_SECONDS, foo)
+    thread1 = threading.Timer(WAIT_SECONDS, impressao)
     thread1.start()
-    foo.counter += 1
-    if foo.counter == 10:
+    impressao.counter += 1
+    if impressao.counter == 10:
         thread1.cancel()
 
-foo.counter = 0   
-foo()
+impressao.counter = 0   
+impressao()

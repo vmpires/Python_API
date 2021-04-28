@@ -14,3 +14,5 @@ Programas em Python consumindo API's para gerar dados.
 6) Consulta da API HG Brasil - Conversão de Real para Dólar.
 
 7) Consulta da API HG Brasil - Imprime valor do Dolar, Euro e Bitcoin 10x em 10 minutos.
+
+8) Consulta Tempo - HG Brasil - Programa que recebe um local (cidade, país, atração turística, etc) e retorna as informações de clima em tempo real
