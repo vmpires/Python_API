@@ -7,6 +7,6 @@ def BuscaAlunos():
             auth = HTTPBasicAuth('victorpires', '1234')) 
     alunos = request.json()
     for item in range(3):
-        print(alunos[item])
+        print(f"Id: {alunos[item]['id']}\nNome: {alunos[item]['nome']}\nRG: {alunos[item]['rg']}\nCPF: {alunos[item]['cpf']}\n")
 
 BuscaAlunos()
