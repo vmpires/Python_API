@@ -16,3 +16,5 @@ Programas em Python consumindo API's para gerar dados.
 7) Consulta da API HG Brasil - Imprime valor do Dolar, Euro e Bitcoin 10x em 10 minutos.
 
 8) Consulta Tempo - HG Brasil - Programa que recebe um local (cidade, país, atração turística, etc) e retorna as informações de clima em tempo real
+
+9) Own API Test: Programa que testa o consumo da minha primeira API em Django Rest Framework
