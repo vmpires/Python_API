@@ -27,5 +27,7 @@ for partida in resposta['partidas']:
     response = requests.post(urlpartida, json=data, headers=head)
     resposta = response.json()
     print(f"Dribles mandante: {resposta['estatisticas']['mandante']['dribes_bem_sucedidos']}\
-     \n Dribles visitante: {resposta['estatisticas']['visitante']['dribes_bem_sucedidos']}")
+     \nDribles visitante: {resposta['estatisticas']['visitante']['dribes_bem_sucedidos']}\
+     \nFinalizações mandante: {resposta['estatisticas']['mandante']['finalizacao']['total']}\
+     \nFinalizações visitante: {resposta['estatisticas']['visitante']['finalizacao']['total']}")
     
